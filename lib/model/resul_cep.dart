@@ -12,15 +12,15 @@ class ResultCep {
   String gia;
 
   ResultCep({
-    this.cep,
-    this.logradouro,
-    this.complemento,
-    this.bairro,
-    this.localidade,
-    this.uf,
-    this.unidade,
-    this.ibge,
-    this.gia,
+    required this.cep,
+    required this.logradouro,
+    required this.complemento,
+    required this.bairro,
+    required this.localidade,
+    required this.uf,
+    required this.unidade,
+    required this.ibge,
+    required this.gia,
   });
 
   factory ResultCep.fromJson(String str) => ResultCep.fromMap(json.decode(str));
